@@ -1,0 +1,10 @@
+|M1 SAM2695
+
+M1:1	t150 v11 o4 l4 p3 @39 \ o2 [c8>c16c16<]4 [g8>g16g16<]4 [a8>a16a16<]4 [e8>e16e16<]4
+M1:2	v10 p3 @66 l8 \ o4 cccccccc gggggggg aaaaaaaa eeeeeeee
+M1:3	v10 p3 @66 l8 \ o4 eeeeeeee o3 bbbbbbbb o4 cccccccc o3 gggggggg
+M1:4	v10 p3 @66 l8 \ o4 gggggggg dddddddd eeeeeeee o3 bbbbbbbb
+M1:15	v10 p3 v10 l4 \ o2 [[c r] 2]4
+M1:16	l4 o2 v14 \ [[r d] 2]3 r d r r
+M1:17	o2 l8 v9 \ [[r g-16 g-16] 4]4
+M1:18	l8 v13 \ r1 r1 r1 r2r4 o3d16 o2b16 f8

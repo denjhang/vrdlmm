@@ -1,0 +1,222 @@
+// --------------------------------------------------------------------------------
+// □□□□□□□□□□□□□□□□□□□□□□□
+// □　　　　　　　　　　　　　　　　　　　　　□
+// □　　　mmldrv sample music for YM2608　　　□
+// □　　　　　　　　　　　　　　　　　　　　　□
+// □□□□□□□□□□□□□□□□□□□□□□□
+// ■TITLE：荒野へ･･･ -YM2608 version-
+// 	（目玉ソフト「モビルフォース ガンガル」ステージ1BGM）
+// ■作曲：OSATOH
+// ■編曲：しゃーらく
+// ■Special Thanks：目玉ソフト/ごん太
+// 		http://www.dlsite.com/home/work/=/product_id/RJ014044.html
+// 		http://www.dlsite.com/home/work/=/product_id/RJ017982.html
+// 								-2016/10/15 v1.1
+// --------------------------------------------------------------------------------
+
+// [[[ モジュール設定 ]]]
+|M1 YM2608
+
+// [[[ FM音色 ]]]
+// Bass01
+@1
+//	AL  FB
+	 3   2
+//	AR  DR  SR  RR  SL  TL  KS  ML DT1 DT2 AMS
+	31  21  25   6  12  22   1   5   2   0   0
+	31  29  11   7   4  24   1   5   7   0   0
+	31  20   3   7   2  18   1   0   3   0   0
+	31   6   3   8  13   1   1   0   1   0   0
+
+// Bass02
+@2
+//	AL  FB
+	 3   6
+//	AR  DR  SR  RR  SL  TL  KS  ML DT1 DT2 AMS
+	27  14   0   6   5  35   0  11   0   0   0
+	27  12   0   6   3  38   0   2   0   0   0
+	27  19   0   6   5  11   0   0   0   0   0
+	25  12   6   9   1   0   0   0   0   0   0
+
+// SynBrass
+@3
+//	AL  FB
+	 5   7
+//	AR  DR  SR  RR  SL  TL  KS  ML DT1 DT2 AMS
+	31   0   2   5   0  27   1   1   7   0   0
+	31   0   0   7   3  10   0   3   3   0   0
+	31   0   0   5   4  24   1   0   3   0   0
+	31   0   0   7   2   0   0   1   7   0   0
+
+// SynLead
+@4
+//	AL  FB
+	 4   5
+//	AR  DR  SR  RR  SL  TL  KS  ML DT1 DT2 AMS
+	31   0   8   7   0  17   0   4   7   0   0
+	31   0   4   7   0   0   0   8   7   0   0
+	31   0   9   7   0   8   0   2   3   0   0
+	31   0   5   8   0   0   0   2   3   0   0
+
+// Bell
+@5
+//	AL  FB
+	 4   7
+//	AR  DR  SR  RR  SL  TL  KS  ML DT1 DT2 AMS
+	18  10  11   3   4  33   0   5   0   0   0
+	22   8   8   4   1   0   0   5   0   0   0
+	22  18   9   5   1  28   0   3   0   0   0
+	20  18  10   6   1   0   0   1   0   0   0
+
+// Drum-tom
+@6
+//	AL  FB
+	 2   0
+//	AR  DR  SR  RR  SL  TL  KS  ML DT1 DT2 AMS
+	24  11  21   9   0  25   0   1   0   0   0
+	24  11  13   9   0  20   0   1   0   0   0
+	21  11  25   9   0   0   0   0   0   0   0
+	19  18  10  10   0   0   1   0   0   0   0
+
+// sq
+@7
+//	AL  FB
+	 2   7
+//	AR  DR  SR  RR  SL  TL  KS  ML DT1 DT2 AMS
+	31   8   6   7   5  24   2   5   7   0   1
+	26  20   5   8   0  15   0   0   3   0   1
+	31  11   4   8   0  20   1   1   7   0   1
+	27  20   3   8   2   0   0   0   3   0   1
+
+// SynBrass2
+@8
+//	AL  FB
+	 5   7
+//	AR  DR  SR  RR  SL  TL  KS  ML DT1 DT2 AMS
+	16  21   5   8   1  22   1   2   0   0   0
+	25  11   1   7   2   0   0   2   0   0   0
+	21  11   2   7   0   0   0   2   0   0   0
+	15  10   1   7   0   0   0   1   0   0   0
+
+
+// [[[ ADPCM ]]]
+P1,1,o5c,,gun_bd_32k.wav
+P1,5,o5c,,gun_sd_32k.wav
+P1,6,o5c,,gun_bdsd_32k.wav
+P1,9,o5c,,gun_bdcc_32k.wav
+
+
+// [[[ マクロ ]]]
+// SSGエンベロープ
+!100 E31,9,0,9,4
+!101 E31,2,1,9,1
+// LFO
+!200 L1,340,33,4,255
+!201 L1,500,33,4,255
+!202 L1,380,31,4,255
+!203 L1,340,20,4,255
+!210 L0,0,0,0,0
+
+// [[[ ミュート ]]]
+// ↓下のコメントアウトを外すと、ベース＆ドラムのみの演奏になります
+//|m1 2,3,4,5,6,7,8,9
+
+
+// [ [ [ ■■ 初期設定 ■■ ] ] ]
+M1:1 t162
+M1:1 r8 \
+M1:2 r8 \
+M1:3 r8 \
+M1:4 r8 \
+M1:5 r8 \
+M1:6 r8 \
+M1:7 r8 \
+M1:8 r8 \
+M1:9 r8 \
+M1:12 r8 \
+M1:13 r8 \
+M1:16 r8 \
+
+// [ [ [ [ [ [ ■■ A ■■ ] ] ] ] ] ]
+// FM
+// Bass
+M1:1 p3 l8 v14 [ o4 [@1q8<d@2q7>d]8 [@1q8<f@2q7>f]8 [@1q8<a-@2q7>a-]4 [@1q8<b-@2q7>b-]4 [@1q8<a@2q7>a]8 ]2
+
+// Brass
+M1:2 !201 D0  p3 v14 @3 Q21 l8 [ o5a4.d&d2& d4.dfgaf a4.>c&c2& c1 <{b-8>c}&c&c2e-4 Q11d4c4<b-4>c4 Q21<a1&a1 ]2
+
+M1:3 !201 D0  p3 v13 @3 Q21 l8 [ o5f4.<a&a2& a4.a>defd f4.f&f2& f1 {d8e-}&e-&e-2a-4 Q11b-4a4f4f4 Q21d1&c+1 ]2
+
+// Brass delay
+M1:4 !201 D-3 p1 v12 @3 q7 r8. l8 [ o5a4.d&d2& d4.dfgaf a4.>c&c2& c1 <{b-8>c}&c&c2e-4 d4c4<b-4>c4 /<a1& a2.&ar ]2   o5a2&a&a. p2D0@8(4>{e8a}&aa2.
+
+M1:5 !201 D-3 p2 v11  @3 q7 r8. l8 [ o5f4.<a&a2& a4.a>defd f4.f&f2& f1 {d8e-}&e-&e-2a-4 b-4a4f4f4 /d1& c+2.&c+r ]2  o5d2&d&d.  p1D-3@8(3r>{e8a}&a2.
+
+// sq
+M1:6 D0 @7 q6 v11 l16 [ [o5p1da>dp3fp2afp3ed]2  p1<adp3efp2adp3fap1dfp3a>dp2<fap3>df
+M1:6 [o5p1fap3>cfp2agp3fc]2 p1<acp3fap2cfp3a>cp1<fap3>cfp2<a>cp3fa
+M1:6 p1<a->cp3e-a-p2<a->cp3e-a-p1ce-p3a->cp2<ce-p3a->c p1<<b->dp3fb-p2<b->dp3fb-p1dfp3b->dp2<dfp3b->d
+M1:6 p1<<a>dp3eap2<a>dp3eap1dep3a>dp2<dep3a>d / p1aep3c+<a p2>ec+p3<ae p1>c+<ap3ec+ p2aep3c+<a ]2
+M1:6 p1<eap3>c+e p2<a>c+p3ea p1c+ep3a>c+ p2<eap3>c+e
+
+
+// SSG
+M1:7 D0  !100 !200 Q15 v13 l4 [ o4f1 a.d.f   f.a.&a a.>c.&c c1d2<b->c  d1 /c+.<a.e ]2  e1
+M1:8 D0  !100 !200 Q15 v13 l4 [ o4d1 f.<a.>d c.f.&f f.a.&a  a-1b-2ff   a1 /a.e.c+ ]2  >c+1
+M1:9 D-1 !100 !200 Q7  v12 l4 [ o3a1 >a.d.f  f.a.&a a.>c.&c <e-1f2b->c d1 /c+.<a.e ]2  e1
+
+// PCM
+M1:16 v11 q8 o5 [ l4 @9c@6c [@1c@6c]6 @1c@6c8@5c8  @9c@6c [@1c@6c]4 / [@1c@6c]2 @1cl16@6c@5ccc ]2  l16 @1c4@6c8@5c8 [@6c@5ccc]4
+
+// Rhythm
+// HiHat
+M1:13 l16 [ p1v8c(6c)3c(3c ]64
+
+// Cymbal
+M1:12 [r1]16
+
+
+
+// [ [ [ [ [ [ ■■ B ■■ ] ] ] ] ] ]
+// Bass
+M1:1 [ o3 [@1q8<b-@2q7>b-]4 >[@1q8<c@2q7>c]4 <[@1q8<a@2q7>a]4 >[@1q8<d@2q7>d]4
+M1:1 <[@1q8<b-@2q7>b-]4 >[@1q8<c@2q7>c]4 [@1q8<d@2q7>d]8 ]2
+
+// Lead
+M1:2 !202 D0 @4 v12 q8 p3 l8 [ [ o4b-4.>d4.a4 gagfre/rc e4.c4.e4 d2.c4 ]2  ce d1& d1 ]2
+M1:3 !202 D-3 @4 v8 q8 p3 l8 r8. [ [ o4b-4.>d4.a4 gagfre/rc e4.c4.e4 d2.c4 ]2  ce d1& /d1 ]2 d4&d&d.
+M1:3 T-16 @6 q8 l16 v12 o6p1gdp2<b-8 T0
+
+// Bell
+M1:4 !210 D0 @5 q8 [ v13 p3o6b-3p2(3b-6&b-2 p3)3>c3p1(3c6&c2 p3)3e3p2(3e6p3)3c3p1(3c6 p3)3f3p2(3f6p3)3e3p1(3e6
+M1:4 p3)3d3p2(3d6&d2 p3)3e3p1(3e6&e2  p3)3g3p2(3g6&g4.p3)3e16g16 f6&f24p1(3e16g16f6&f2 ]2
+
+M1:5 !210 D0 @5 q8 [ v12 p3o6f3p2(3f6&f2 p3)3g3p1(3g6&g2     p3)3a3p2(3a6p3)3a3p1(3a6 p3)3a3p2(3a6p3)3a3p1(3a6
+M1:5 p3)3f3p2(3f6&f2 p3)3g3p1(3g6&g2 p3)3a3p2(3a6&a2 p3)3a3p1(3a6&a2 ]2
+
+M1:6 r6 !210 D-3 @5 q8 v12 [ p1o6b-3&b-2 p2r6>c3&c2 p1r6e3&e6p2c3 r6p1f3&f6p2e3
+M1:6 p1r6d3&d2 p2r6e3&e2 p1r6g3&g2 p2r24e16g16f3&f2 /r6 ]2
+
+// SSG
+M1:7 D0 !101 !210 D0 v11 l1 o4fgga fgaa
+M1:7 D0 !100 !203 q8 l16 v11 o6d1e1e1f2&f8e&d&c&<b-&a&g f2a2>c2e2 e1 f1
+
+M1:8 D0 !101 !210 D0 v11 l1 o4deef degf
+M1:8 D-1!100 !203 q8 l16 v10 o6d1e1e1f2&f8e&d&c&<b-&a&g f2a2>c2e2 e1 f4.. !100 )1<<a>dfdfafa>d
+
+M1:9 D0 !101 !210 D0 v11 l1 o4b->ccd <b->cdd
+M1:9 !100 l16 v11 q4 [ o3 [b->dfb-<]4 >[ceg>c<]4 / [cea>c<]4 [dfa>d<]4 ]2  [dga>d<]4 dfa>d<fa>d<a>dfdfafa>d
+
+// PCM
+M1:16 [ l4 @9c@6c [@1c@6c]6 @1c@6c8@5c8  @9c@6c [@1c@6c]3 @9c@6c / [@1c@6c]2 l16 @6c8@5c8 @6c@5ccc ]2
+M1:16 l16 @1c4 @6c8@5cc [v11@6c@5(3c)3c(3c]4
+
+// Rhythm
+// HiHat
+M1:13 l16 [ [p1v8c(6c)3c(3c]6 )3c(3crr)3c(3c)3c(3c ]8
+
+// Cymbal
+M1:12 v11 p1 [r1 r2r8c8r4]8
+
+
+// END

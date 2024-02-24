@@ -1,0 +1,676 @@
+// --------------------------------------------------------------------------------
+// □□□□□□□□□□□□□□□□□□□□□□□□
+// □　　　　　　　　　　　　　　　　　　　　　　□
+// □　　mmldrv sample music for SPFM FMの塔 　　□
+// □　　　　　　　　　　　　　　　　　　　　　　□
+// □□□□□□□□□□□□□□□□□□□□□□□□
+// ■TITLE：見えない追手 -SPFM FMの塔 version-
+// 	（目玉ソフト「モビルフォース ガンガル」ステージ2BGM）
+// ■作曲：OSATOH
+// ■編曲：しゃーらく
+// ■Special Thanks：目玉ソフト/ごん太
+// ■CM!!：http://www.dlsite.com/home/work/=/product_id/RJ014044.html
+// 	    http://www.dlsite.com/home/work/=/product_id/RJ017982.html
+//	    http://www.sound-octa.net/?p=339
+//	    http://www.kadenken.com/shopdetail/000000000521/ct92/page1/order/
+// 								-2017/6/11 v1.0
+// --------------------------------------------------------------------------------
+// SPFM搭載の3つの音源の音量が、均等に鳴るよう調整してください
+// 　※ウチの環境では、YM2608,YM2610を最大、YM2151を少し下げる感じです
+// 【参考】音量ツマミの欠けの位置の目安
+// 	↓2608（最大）↓2610（最大）
+// 	/）	|）	/）
+// 		↑2151（垂直になるくらい）
+// --------------------------------------------------------------------------------
+// [[[ モジュール設定 ]]]
+|M1 YM2608
+|M2 YM2151
+|M3 YM2610
+
+// [[[ FM音色 - OPM/OPN ]]]
+// Bass
+@1
+//	AL  FB
+	 0   7
+//	AR  DR  SR  RR  SL  TL  KS  ML DT1 DT2 AMS
+	30  14   8   6  12  24   2   1   0   0   0
+	24  10   8   6  12  58   3   1   0   0   0
+	28   4   8   6  12  20   3   0   3   0   0
+	28   5   8   6  12   0   3   1   0   0   0
+
+// Brass
+@2
+//	AL  FB
+	 5   7
+//	AR  DR  SR  RR  SL  TL  KS  ML DT1 DT2 AMS
+	16   8   4   6   4  25   1   2   0   0   0
+	16   8   3   6   1  20   1   2   0   0   0
+	16   7   2   6   2  20   1   2   0   0   0
+	16   8   7   7   2   3   1   4   0   0   0
+
+// sqSyn
+@3
+//	AL  FB
+	 4   7
+//	AR  DR  SR  RR  SL  TL  KS  ML DT1 DT2 AMS
+	31  24   0   0   5  40   0   4   3   0   0
+	31   0   0  15   0  10   0   2   3   0   0
+	31   0   0   0   0 127   0   2   7   0   0
+	31   0   0  15   0   0   0   2   7   0   0
+
+// SynLead
+@4
+//	AL  FB
+	 2   0
+//	AR  DR  SR  RR  SL  TL  KS  ML DT1 DT2 AMS
+	16   0   0   6   0  39   1   4   0   0   1
+	17   0   0   6   0  28   1   2   0   0   1
+	17   7   0   4   6  40   1   2   0   0   1
+	15  11   0   9   2   2   1   2   0   0   0
+
+// chord backing
+@5
+//	AL  FB
+	 4   7
+//	AR  DR  SR  RR  SL  TL  KS  ML DT1 DT2 AMS
+	19   6   6   7   1  24   0   2   2   0   0
+	24  11   3   9   0   0   0   2   3   0   0
+	16   2   0   8   0  19   0   1   2   0   0
+	17   9   5  10   1   2   0   1   0   0   0
+
+// Piano
+@6
+//	AL  FB
+	 4   5
+//	AR  DR  SR  RR  SL  TL  KS  ML DT1 DT2 AMS
+	31   5   0   0   0  230  1   1   0   0   0
+	20  10   3   7   8   0   1   1   0   0   0
+	31   3   0   0   0  25   1   1   0   0   0
+	31  12   3   7  10   2   1   1   0   0   0
+
+// Brass
+@7
+//	AL  FB
+	 5   7
+//	AR  DR  SR  RR  SL  TL  KS  ML DT1 DT2 AMS
+	26   1   4   7   1  27   1   2   0   0   0
+	26   1   3   7   1  25   1   2   0   0   0
+	26   1   2   7   0  20   1   2   0   0   0
+	26   2   2   7   0   6   1   4   0   0   0
+
+// pad01
+@8
+//	AL  FB
+	 6   0
+//	AR  DR  SR  RR  SL  TL  KS  ML DT1 DT2 AMS
+	24   1   0   9   1  55   3   4   2   0   0
+	24   8   0   9   1   0   3   4   6   0   0
+	24   1   0   9   1   0   3   2   3   0   0
+	20   1   0   9   1   0   0   2   6   0   0
+
+// LeadGt
+@9
+//	AL  FB
+	 0   7
+//	AR  DR  SR  RR  SL  TL  KS  ML DT1 DT2 AMS
+	16  10   0   3   3  30   0   3   3   0   0
+	19  11   0   5   0  22   0   1   3   0   0
+	26  11   0   3   0  25   0   1   0   0   0
+	17   1   0   7   0   0   0   1   0   0   0
+
+// Brass TP
+@10
+//	AL  FB
+	 5   7
+//	AR  DR  SR  RR  SL  TL  KS  ML DT1 DT2 AMS
+	28   9   0   6   2  27   0   1   0   0   0
+	29   9   0   8   2   0   0   1   2   0   0
+	29   5   0   8   2   0   0   0   0   0   0
+	25   6   0   8   1   0   0   2   0   0   0
+
+// Brass TP
+@11
+//	AL  FB
+	 5   7
+//	AR  DR  SR  RR  SL  TL  KS  ML DT1 DT2 AMS
+	28   1   1   6   1  27   3   1   0   0   0
+	29   1   0   8   0   0   0   2   1   0   0
+	29   3   0   8   0   0   0   1   0   0   0
+	31   0   0   8   0   0   0   1   0   0   0
+
+// EP
+@12
+//	AL  FB
+	 4   7
+//	AR  DR  SR  RR  SL  TL  KS  ML DT1 DT2 AMS
+	31  15  12   7   5  39   1  13   7   0   0
+	31  14  10   7   5   2   1   1   7   0   0
+	31   0   0   0   5  34   0   1   3   0   0
+	31   0   5   7   5   3   1   2   3   0   0
+
+// Harp
+@13
+//	AL  FB
+	 1   7
+//	AR  DR  SR  RR  SL  TL  KS  ML DT1 DT2 AMS
+	31   0  13   4   0  28   1   4   0   0   0
+	31   0  13   4   0  32   1   2   0   0   0
+	31   6   5   4   1  48   0   4   0   0   0
+	31  15   9   6   1   0   1   2   0   0   0
+
+// Gt
+@14
+//	AL  FB
+	 0   5
+//	AR  DR  SR  RR  SL  TL  KS  ML DT1 DT2 AMS
+	26  15   0   3   3  24   0   3   3   0   0 
+	29  11   0   5   0  22   0   1   0   0   0 
+	26  11   0   3   0  25   0   1   0   0   0 
+	27  11   0  11   0   0   0   1   0   0   0 
+
+// choir
+@15
+//	AL  FB
+	 6   7
+//	AR  DR  SR  RR  SL  TL  KS  ML DT1 DT2 AMS
+	12   0   2   6   3  55   0   0   0   0   0
+	12   3   3   6   0   0   0   3   0   0   0
+	11   3   2   6   1   0   0   4   0   0   0
+	12   8   3   6   5   0   0   4   0   0   0
+
+// choir
+@16
+//	AL  FB
+	 6   7
+//	AR  DR  SR  RR  SL  TL  KS  ML DT1 DT2 AMS
+	12   0   2   6   3  55   0   1   0   0   0
+	12   3   3   6   0   0   0   5   0   0   0
+	11   3   2   6   1   0   0   4   0   0   0
+	12   8   3   6   5   0   0   4   0   0   0
+
+// choir
+@17
+//	AL  FB
+	 6   7
+//	AR  DR  SR  RR  SL  TL  KS  ML DT1 DT2 AMS
+	12   0   2   6   3  55   0   0   0   0   0
+	12   3   3   6   0   0   0   6   0   0   0
+	11   3   2   6   1   0   0   4   0   0   0
+	12   8   3   6   5   0   0   4   0   0   0
+
+// choir
+@18
+//	AL  FB
+	 6   7
+//	AR  DR  SR  RR  SL  TL  KS  ML DT1 DT2 AMS
+	12   0   2   6   3  50   0   0   0   0   0
+	12   3   3   6   3   0   0   4   0   0   0
+	11   3   2   6   1   0   0   4   0   0   0
+	12   8   3   6   5   0   0   4   0   0   0
+
+
+
+// [[[ ADPCM ]]]
+P1,1,gun_bgm2_gt_ea.wav,1
+P1,2,gun_bgm2_gt_eb.wav,1
+P1,11,gun_bgm2_gt_mu_a2.wav,1
+P1,21,gun_bgm2_gt_b01.wav,1
+P1,22,gun_bgm2_gt_b02a.wav,1
+P1,23,gun_bgm2_gt_b02b.wav,1
+
+P3,1,gun_bd3_32k.wav,1,1
+P3,2,gun_sd5_32k.wav,1,1
+
+P3,11,gun_tomL_32k_L.wav,1,1
+P3,12,gun_tomL_32k_R.wav,1,1
+P3,13,gun_tomML_32k_L.wav,1,1
+P3,14,gun_tomML_32k_R.wav,1,1
+P3,15,gun_tomMH_32k_L.wav,1,1
+P3,16,gun_tomMH_32k_R.wav,1,1
+P3,17,gun_tomH_32k_L.wav,1,1
+P3,18,gun_tomH_32k_R.wav,1,1
+
+P3,21,gun_cc1_32k_L.wav,1,1
+P3,22,gun_cc1_32k_R.wav,1,1
+P3,23,gun_cc2_32k_L.wav,1,1
+P3,24,gun_cc2_32k_R.wav,1,1
+P3,25,gun_cc3_32k_L.wav,1,1
+P3,26,gun_cc3_32k_R.wav,1,1
+P3,31,gun_spcc01_32k.wav,1,1
+P3,32,gun_ride1_32k.wav,1,1
+
+P3,101,gun_bgm02_mel01_01_32k.wav,1,0
+P3,102,gun_bgm02_mel01_02_32k.wav,1,0
+P3,103,gun_bgm02_mel01_03_32k.wav,1,0
+P3,104,gun_bgm02_mel01_04_32k.wav,1,0
+P3,105,gun_bgm02_mel01_05_32k.wav,1,0
+
+P3,201,gun_bgm2_brass3_01_32k.wav,1,1
+P3,202,gun_bgm2_brass3_02_32k.wav,1,1
+P3,203,gun_bgm2_brass3_03_32k.wav,1,1
+
+P3,211,gun_bgm2_choir01_32k.wav,1,0
+P3,212,gun_bgm2_choir02_32k.wav,1,0
+P3,213,gun_bgm2_choir03_32k.wav,1,0
+P3,214,gun_bgm2_choir04_32k.wav,1,0
+P3,215,gun_bgm2_choir05_32k.wav,1,0
+
+
+// [[[ マクロ ]]]
+// SSGエンベロープ
+!100 E31,12,0,9,6
+!101 E31,11,1,8,4
+!102 E31,11,0,8,4
+
+// LFO
+!200 L1,340,33,4,255
+!201 L1,500,33,4,255
+!202 L1,300,35,4,255
+!203 L1,180,19,5,255
+!204 L1,375,16,4,255
+!205 L1,270,24,5,255
+!206 L1,350,19,5,255
+!210 L0,0,0,0,0
+
+// DistGt
+!501 N3@1
+!502 N-4@2
+!511 N3@11
+!521 N0@21
+!522 N0@22
+!523 N0@23
+
+// [[[ ミュート ]]]
+//|m1 1,2,3
+//|m2 4,5,6,7
+//|m*
+//|m1 !7,8,9,16
+//|m2 !3,4,5,6
+//|m3 !3,10,11,12,13,14,15,16
+//|m1 !3,16
+//|m1 !3
+//|m3 !2,5,6
+
+
+// [ [ [ ■■ 初期設定 ■■ ] ] ]
+// TEMPO
+M1:1 t150
+
+// ----- YM2612 FM/PCM -----
+// M0:ch6 - FM part
+// M1:ch6,7,8,9 - PCM part
+// ----- OPL系 -----
+//M0:FM 9ch
+//M1:FM 6ch + RHYTHM
+//M3:1 M1
+
+// [ [ [ [ [ [ ■■ A ■■ ] ] ] ] ] ]
+// Bass
+M2:1 @1 v15 l8 \
+M2:1 [ [ [ [q7o3aq4>a]2 <q7a16a16q4>a ]3 / q7o3aq4>aq7<dq4>d<q7e16e16q4>e ]2  q7o3eq4>eq7<g16q4>g<q7g16aq4>a ]2
+
+// mel
+M1:1 \ D0  @2 p3 v12 Q10 l8    [ [o4a.g.ab>c]2 {c32d}&d32&dc.<bag a.g.fe4  [o4a.g.ab>c]2 d.c.<bag e.g.eq8{e16a}&a.Q10 ]2
+M1:2 \ D-3 @2 p2 v12 Q10 l8 r8 [ [o4a.g.ab>c]2 {c32d}&d32&dc.<bag a.g.fe4  [o4a.g.ab>c]2 d.c.<bag e.g.eq8{e16a}&a.Q10 ]2
+M1:3 \ D3  @2 p1 v9  Q10 l8 r4 [ [o4a.g.ab>c]2 {c32d}&d32&dc.<bag a.g.fe4  [o4a.g.ab>c]2 d.c.<bag e.g.e{e16a}&a. ]2
+
+// chord Brass
+M2:2 \ D-3 @7 q6 p3 v11 o4 l8   [ [e.e.e/ee]4 r4 [e.e.eee]3 r.e.re4 ]2
+M2:3 \ D-3 @7 q6 p3 v11 o4 l8   [ [ [c.c.c/cc]4 c4 ]2 ]2
+M3:1 \ D3  @7 q6 p1 v10 o4 l8 r [ [e.e.e/ee]4 r4 [e.e.eee]3 r.e.re4 ]2
+M3:4 \ D3  @7 q6 p2 v10 o4 l8 r [ [ [c.c.c/cc]4 c4 ]2 ]2
+
+// sq
+M3:2 \ [r2.]7 D0  @3 q8 p2 l16 v8 r2.
+M3:2 [ o4ea>ce<a>ceacea>c <ea>ce<a>ceacea>c ec<ae>c<aecaec<a >ec<ae>c<aecaec<a ]2
+
+M3:3 \ [r2.]7 D-3 @3 q8 p1 l16 v7 r2. o3ea
+M3:3 [ o4ea>ce<a>ceacea>c <ea>ce<a>ceacea>c ec<ae>c<aecaec<a >ec<ae>c<aecaec<a ]2
+
+// Piano
+M1:4 D3 @6 q8 \ p2 v10 l8 o5 [ c4.cc4 ]16
+M1:5 D3 @6 q8 \ p1 v11 l8 o4 [ a4.aa4 ]16
+M1:6 D3 @6 q8 \ p3 v10 l8 o4 [ e4.ee4 ]16
+
+// SSG
+M1:7 \ D-1 !100 A24,0,768,0 AC3 v13 Q7 l8 o4 [ [a2/aa]8 ga ]2
+M1:8 \ D-1 !100 A24,0,768,0 AC3 v13 Q7 l8 o4 [e2ee]16
+M1:9 \ D-1 !100 A24,0,768,0 AC3 v13 Q7 l8 o4 [c2cc]16
+
+// Melody - YM2610B PCM-B
+M3:16 R127 \ p3 q8 v14 [ [ @101o5c2. c2. @102c2. /@103c2. ]2 /@104c2. ]2 @105c2.
+
+// Drums -YM2610B PCM-A
+// BD
+M3:10 @1 q8 l8 o4 \ [v15crc16(4c16r)4cr crcrcr]4  [v15crc16(4c16r)4cr]8
+
+// SD
+M3:11 q8 o4 @2 \ l16 v14 p3 [r8c8]11 r8cc [r8c8]11 r4 [r8c8]11 r8cc  [r8c8]10 r8cccccc
+
+// TOM
+M3:12 \ p1 q8 o4 v13 l16 [r2.]7 r2@17c@15c  @13c@11c    [r2.]8
+M3:13 \ p2 q8 o4 v13 l16 [r2.]7 r2@18c@16c(2@14c@12c)2  [r2.]8
+
+// Cymbals
+M3:14 \ p1 q8 o4 l2 [ v11@21c.&c. r.r. c.&c. v13@23c.c. ]2
+M3:15 \ p2 q8 o4 l2 [ v9 @22c.&c. r.r. c.&c. v11@24c.c. ]2
+
+// Rhythm
+M1:13 R127 \ o5 q8 p2 l8 [v5c(2c)2c(2c)2c16(2c16)2c]16
+
+// DistGt -OPNA PCM
+M1:16 \ q8 p1 v6 l2 [ [ !501o4a.& a4.!511a8!501/a8!511a8 ]2 a4 ]4
+
+// rest
+M2:4 \ [r2.]16
+M2:5 \ [r2.]16
+M2:6 r8 \ r2r8 [r2.]15
+M2:7 r8 \ r2r8 [r2.]14 D0  !202 @4 q8 v14 p3 r2.
+M2:8 \ [r2.]15         D-3 !202 @4 q8 v12 p1 r2.
+M3:5 \ [r2.]15 r2 D0 @5 v9 p1 r4
+M3:6 \ [r2.]15 r2 D0 @5 v9 p3 r4
+
+
+
+// [ [ [ [ [ [ ■■ B ■■ ] ] ] ] ] ]
+// Bass
+M2:1 q6 o3 [ [f]5 [g]5 [d]5 [e]5 ]2
+
+// mel
+M2:7 l8     [ o6a2&a {a>d}&d4<g4 a2&a b2&b ]2
+M2:8 l8 o6a [ o6a2&a {a>d}&d4<g4 a2&a b2&b ]2
+
+//LeadGt
+M2:4 [r2r8]7 r4 D0  @9 q8 p3 v12 l16 r8     o5c&de&g
+M2:5 [r2r8]7 r4 D-3 @9 q8 p3 v10 l16 r8     o5c&d p2c&de&g
+M2:6 [r2r8]7 r4 D3  @9 q8 p2 v9  l16 r8 r4r o5c&de&g
+
+// chord Brass
+M2:2 [ o4 f2&f g2&g a2&a g2&g ]2
+M2:3 [ o4 c2&c d2&d f2&f e2&e ]2
+M3:1 [ o4 f2&f g2&g a2&a /g2&g ]2  g2
+M3:4 [ o4 c2&c d2&d f2&f /e2&e ]2  e2
+
+// Piano
+M1:4 [ o5c2&c <b2&b a2&a b2&b ]2
+M1:5 [ o4a2&a  g2&g f2&f g2&g ]2
+M1:6 [ o4f2&f  d2&d d2&d d2&d ]2
+
+// chord
+M3:5 q8 l8 o4 [ o5c2&c <b2&b a2&a b2&b ]2
+M3:6 q8 l8 o4 [ o4a2&a  g2&g f2&f g2&g ]2
+M3:2 D0 @5 q8 v9 p2
+M3:2 q8 l8 o4 [ o4f2&f  d2&d d2&d d2&d ]2
+
+// SSG
+M1:7 !101 A0 v14 [ o4 [a]15 [g]5 ]2 
+M1:8 !101 A0 v14 [ o4 [f]5 [g]5 [f]5 [e]5 ]2
+M1:9 !101 A0 v14 [ o4 [c]5 [d]5 [d]5 [b]5 ]2
+
+// Drums - YM2610B PCM-A
+// BD
+M3:10 v15 [crccr]8
+
+// SD
+M3:11 l8 [rcrr/c]4 c16c16  [rcr/rc]4 c16c16r
+
+// TOM
+M3:12 [ r2/r8 ]8 @15c@11c
+M3:13 [ r2/r8 ]8 @16c@12c
+
+// Cymbals
+M3:14 v11@21c&c8 rr8 v12@23c&c8 v11@21c&c8  v12@23c&c8 rr8 v11@21c&c8 v12@23c&c8
+M3:15 v8 @22c&c8 rr8 v11@24c&c8 v8 @22c&c8  v11@24c&c8 rr8 v8 @22c&c8 v11@24c&c8
+
+// Rhythm
+M1:13 v5[c]40
+
+// DistGt -OPNA PCM
+M1:16 v4 [ !521o5c&c8& c&c8& c&c8 /!522c&c8 ]2  !523c&c8
+
+// rest
+M1:1 [r2r8]8
+M1:2 [r2/r8]8
+M1:3 [r2r8]7 r4.
+M3:3 [r2r8]8
+M3:16 [r2r8]8
+
+
+
+// [ [ [ [ [ [ ■■ A-2 ■■ ] ] ] ] ] ]
+// Bass
+M2:1 [ [ [ [q7o3aq4>a]2 <q7a16a16q4>a ]3 / q7o3aq4>aq7<fq4>f<q7e16e16q4>e ]2  q7o3eq4>eq7<g16q4>g<q7g16aq4>a ]2
+
+// LeadGt
+M2:4 agab>c8<a&gab>c8 <aga&b>cdedcdc<b agdeagededc<b >dc<b>d<gabaf&e-e8
+M2:4 gegabga-ab>cde aeab>c<a>cdedc<a d&eg&ed&eg&ed&eg&e d&egfedeg{ga}&a8&a32r32
+M2:4 l24 [b&>c<b&age]3  b&ag&edc l16 egfedc<bb- gedc<b>c<a8.b>c8 de8df8e8.rde
+M2:4 ga>c&de&ga&b>cdeg a-&ab-&bagedc<b>ed c<a&b>c<a&b>c<ab>cde l24 <bab>cde<b>ceagegedc<ba
+
+M2:5 agab>c8<a&gab>c8 <aga&b>cdedcdc<b agdeagededc<b >dc<b>d<gabaf&e-e8
+M2:5 gegabga-ab>cde aeab>c<a>cdedc<a d&eg&ed&eg&ed&eg&e d&egfedeg{ga}&a8&a32r32
+M2:5 l24 [b&>c<b&age]3  b&ag&edc l16 egfedc<bb- gedc<b>c<a8.b>c8 de8df8e8.rde
+M2:5 ga>c&de&ga&b>cdeg a-&ab-&bagedc<b>ed c<a&b>c<a&b>c<ab>cde l24 <bab>cde<b>ceagegedc<ba
+
+M2:6 agab>c8<a&gab>c8 <aga&b>cdedcdc<b agdeagededc<b >dc<b>d<gabaf&e-e8
+M2:6 gegabga-ab>cde aeab>c<a>cdedc<a d&eg&ed&eg&ed&eg&e d&egfedeg{ga}&a8&a32r32
+M2:6 l24 [b&>c<b&age]3  b&ag&edc l16 egfedc<bb- gedc<b>c<a8.b>c8 de8df8e8.rde
+M2:6 ga>c&de&ga&b>cdeg a-&ab-&bagedc<b>ed c8<a&b>c<a&b>c<ab>cd l24 <bab>cde<b>ceage
+
+// chord Brass
+M2:2 D-3 @8 q8 p3 v8 o4 l8   [ e2.&e2.&e2.&e2. ]4
+M2:3 D-3 @8 q8 p3 v7 o4 l8   [ c2.&c2.&c2.&c2. ]4
+M3:1 D3  @8 q8 p2 v4 o4 l8 r [ e2.&e2.&e2.&e2. ]4
+M3:4 D3  @8 q8 p1 v3 o4 l8 r [ c2.&c2.&c2.&c2. ]4
+
+// sq
+M3:2 [r2.]7 D0  @3 q8 p2 l16 v8 r2.
+M3:2 [ o4ea>ce<a>ceacea>c <ea>ce<a>ceacea>c ec<ae>c<aecaec<a >ec<ae>c<aecaec<a ]2
+
+M3:3 [r2.]8
+M3:3 [ o4ea>ce<a>ceacea>c <ea>ce<a>ceacea>c ec<ae>c<aecaec<a >ec<ae>c<aecaec<a ]2
+
+// Piano
+M1:4 p3 o5 [ c4.cc4 ]16
+M1:5 p3 o4 [ a4.aa4 ]16
+M1:6 p3 o4 [ e4.ee4 ]16
+
+// SSG
+M1:7 !100 A24,0,768,0 AC3 v13 o4 [ [a2/aa]8 ga ]2
+M1:8 !100 A24,0,768,0 AC3 v13 o4 [e2ee]16
+M1:9 !100 A24,0,768,0 AC3 v13 o4 [c2cc]16
+
+// Drums -YM2610B PCM-A
+// BD
+M3:10 [v15crc16(4c16r)4cr crcrcr]4  [v15crc16(4c16r)4cr]8
+
+// SD
+M3:11 l16 [r8c8]11 r8cc [r8c8]11 r4   [r8c8]11 r8cc  [r8c8]10 r8cccccc
+
+// TOM
+M3:12 p1 q8 o4 v13 l16 [r2.]7 r2@17c@15c  @13c@11c    [r2.]8
+M3:13 p2 q8 o4 v13 l16 [r2.]7 r2@18c@16c(2@14c@12c)2  [r2.]8
+
+// Cymbals
+M3:14 p1 q8 o4 l2 [ v11@21c.&c. r.r. c.&c. v13@23c.c. ]2
+M3:15 p2 q8 o4 l2 [ v9 @22c.&c. r.r. c.&c. v11@24c.c. ]2
+
+// Rhythm
+M1:13 o5 q8 p3 l8 [v5c(2c)2c(2c)2c16(2c16)2c]16
+
+// DistGt -OPNA PCM
+M1:16 v6 [ [ !501o4a.& a4.!511a8!501/a8!511a8 ]2 a4 ]4
+
+// rest
+M1:1 [r2.]16
+M1:2 [r2.]16
+M1:3 [r2.]16
+M2:7 [r2.]16
+M2:8 [r2.]16
+M3:5 [r2.]16
+M3:6 [r2.]16
+M3:16 [r2.]16
+
+
+
+// [ [ [ [ [ [ ■■ B-2 ■■ ] ] ] ] ] ]
+// Bass
+M2:1 q6 o3 [ [f]5 [g]5 [d]5 [e]5 ]2
+
+// mel
+M2:7 l8 [ o6a2&a {a>d}&d4<g4 a2&a b2&b ]2
+M2:8 l8 [ o6a2&a {a>d}&d4<g4 a2&a b2&b ]2
+
+// chord Brass
+M2:2 D-3 @7 q6 p3 v11
+M2:3 D-3 @7 q6 p3 v10
+M3:1 D3  @7 q6 p1 v6
+M3:4 D3  @7 q6 p2 v5
+M2:2 [ o4 f2&f g2&g a2&a g2&g ]2
+M2:3 [ o4 c2&c d2&d f2&f e2&e ]2
+M3:1 [ o4 f2&f g2&g a2&a /g2&g ]2  g2
+M3:4 [ o4 c2&c d2&d f2&f /e2&e ]2  e2
+
+// Piano
+M1:4 p2 [ o5c2&c <b2&b a2&a b2&b ]2
+M1:5 p1 [ o4a2&a  g2&g f2&f g2&g ]2
+M1:6 p2 [ o4f2&f  d2&d d2&d d2&d ]2
+
+// chord
+M3:5 q8 l8 o4 [ o5c2&c <b2&b a2&a b2&b ]2
+M3:6 q8 l8 o4 [ o4a2&a  g2&g f2&f g2&g ]2
+M3:2 D0 @5 q8 v9 p2
+M3:2 q8 l8 o4 [ o4f2&f  d2&d d2&d d2&d ]2
+
+// SSG
+M1:7 !101 A0 v14 [ o4 [a]15 [g]5 ]2 
+M1:8 !101 A0 v14 [ o4 [f]5 [g]5 [f]5 [e]5 ]2
+M1:9 !101 A0 v14 [ o4 [c]5 [d]5 [d]5 [b]5 ]2
+
+// Drums -YM2610B PCM-A
+// BD
+M3:10 v15 [crccr]8
+
+// SD
+M3:11 l8 [rcrr/c]4 c16c16 [rc/rrc]4  l16 cccccc
+
+// TOM etc
+M3:12 [ r2r8 ]8
+M3:13 [ r2r8 ]8
+
+// Cymbals
+M3:14 v11@21c&c8 rr8 v12@23c&c8 v11@21c&c8  v12@23c&c8 rr8 v11@21c&c8 v12@23c&c8
+M3:15 v8 @22c&c8 rr8 v11@24c&c8 v8 @22c&c8  v11@24c&c8 rr8 v8 @22c&c8 v11@24c&c8
+
+// Rhythm
+M1:13 v5[c]40
+
+// DistGt -OPNA PCM
+M1:16 v4 [ !521o5c&c8& c&c8& c&c8 /!522c&c8 ]2  !523c&c8
+
+// rest
+M1:1 [r2r8]8
+M1:2 [r2r8]8
+M1:3 [r2r8]8
+M2:4 [r2r8]8
+M2:5 [r2/r8]8
+M2:6 [r2r8]7 r2r24.
+M3:3 [r2/r8]8
+M3:16 [r2r8]8
+
+
+
+// [ [ [ [ [ [ ■■ C ■■ ] ] ] ] ] ]
+// Bass
+M2:1 Q14 [ [ o3ffffg16g16ggg aaaag16g16ggg >cccc<b16b16bbb /eeee>e16e16e<be ]2  aaaaa16a16a/gg ]2  aa
+
+// Brass
+M2:4 D-3  @10 p3 q8
+M2:5 D-3  @10 p3 q8
+
+M2:4 v9 l8 o6 [ a2b.a.b >c2d.e.d c2/d+.<b.>f+ a.b.ag+.e.<b ]2  e.<b.>e <a1
+M2:4 [ a2b.a.b >c2d.e.d c2/d+.<b.>f+ /a.b.ag+.e.<b ]2  e.<b.>g+ a1
+
+M2:5 v8  l8 o6 [ f2g.f.g a2b.b.b g2b./f+.>d+ e.e.ee.<b.g+ ]2  g+.b e1
+M2:5 [ f2g.f.g a2b.b.b g2b./f+.>d+ e.e.ee.<b.g+ ]2  g+.>e e1
+
+// Brass delay
+M2:6 D3 @10 p2 q8
+M2:7 D3 @10 p2 q8
+
+M2:6 v8 l8 o6 a [ a2b.a.b >c2d.e.d c2/d+.<b.>f+ a.b.ag+.e.<b ]2  e.<b.>e <a1
+M2:6 [ a2b.a.b >c2d.e.d c2/d+.<b.>f+ /a.b.ag+.e.<b ]2  e.<b.>g+ a1
+
+M2:7 v7 l8 o6 f [ f2g.f.g a2b.b.b g2b./f+.>d+ e.e.ee.<b.g+ ]2  g+.b e1
+M2:7 [ f2g.f.g a2b.b.b g2b./f+.>d+ e.e.ee.<b.g+ ]2  g+.>e e1
+
+// chord Brass
+M2:2 !202 D-2 @11 q8 v6 p3 l8 [ [ o5 f2g.g.g a2g.g.g >c2<b.b.b /a.a.ag+.g+.g+ ]2  >c1 ]2  !210
+M2:3 !202 D-2 @11 q8 v6 p3 l8 [ [ o5 c2d.d.d e2d.d.d g2/f+.f+.f+ e.e.ee.e.e ]2  g+.g+.g+ e1 ]2  !210
+M3:1 !202 D1  @11 q8 v6 p2 l8 [ [ o5 f2g.g.g a2g.g.g >c2<b.b.b /a.a.ag+.g+.g+ ]2  >c1 ]2  !210
+M3:4 !202 D1  @11 q8 v6 p2 l8 [ [ o5 c2d.d.d e2d.d.d g2/f+.f+.f+ e.e.ee.e.e ]2  g+.g+.g+ e1 ]2  !210
+
+// Piano
+M1:4 p2 v11 l8 [ [ o5 [a.a.a]4  >c.c.c<b.b.b /b.b.bb.b.b ]2  [a.a.a]2 ]2
+M1:5 p1 v11 l8 [ [ o5 f.f.fg.g.g e.e.ed.d.d  g.g.g/f+.f+.f+ a.a.ag+.g+.g+ ]2  g+.g+.g+ [e.e.e]2 ]2
+M1:6 p2 v11 l8 [ [ o5 c.c.cd.d.d c.c.c<b.b.b  >e.e.e/d+.d+.d+ e.e.ee.e.e ]2  e.e.e [c.c.c]2 ]2
+
+// chord
+M3:5 D0 Q11 v10 p3 l8 [ [ o4 f2g.g.g a2g.g.g >c2<b.b.b /a.a.ag+.g+.g+ ]2  >c1 ]2
+M3:6 D0 Q11 v9  p3 l8 [ [ o4 c2d.d.d e2d.d.d g2/f+.f+.f+ e.e.ee.e.e ]2  g+.g+.g+ a1 ]2
+M3:2 D0 Q11 v11 p3 l8 [ [ o4 a2b.b.b >c2<b.b.b >e2/d+.d+.d+ <b.b.bb.b.b ]2  e.e.e e1 ]2
+
+// sq
+M1:1 D3  @12 q8 v13 p1 l16   [ [ [o5fa>c<a]2 [o5gb>d<b]2 [o5a>cec]2 [o5gb>d<b]2
+M1:1  [o5g>cec]2 /[o5f+b>d+<b]2 [o5ab>e<b]2 [o5g+b>e<b]2 ]2  [o5g+b>e<b]2 /[o5a>cec]4 ]2
+M1:1 [o5a>cec]2 <a>cea>c<aec
+
+M1:2 D-3 @12 q8 v12 p2 l16 r [ [ [o5fa>c<a]2 [o5gb>d<b]2 [o5a>cec]2 [o5gb>d<b]2
+M1:2  [o5g>cec]2 /[o5f+b>d+<b]2 [o5ab>e<b]2 [o5g+b>e<b]2 ]2  [o5g+b>e<b]2 /[o5a>cec]4 ]2
+M1:2 [o5a>cec]2 <a>cea>c<ae
+
+// choir
+M1:3 [r1]8 !210 D-3 q8 p1 v7 l2 [ @16o3fg @18a   @16g @15>c/<b a@16e ]2 @17<e @15a1
+M3:3 [r1]8 !210 D3  q8 p3 v5 l2 [ @16o3fg @18>c< @16g @15>c/<b a@16e ]2 @17<e @15a1
+
+// SSG
+M1:7 !100 A48,0,768 AC0 Q16 v14 [ [ o4f.f.fd.d.d  e.e.ed.d.d   e.e.e/d+.d+.d+  e.e.ee.e.e ]2  [e.e.e]3 ]2
+M1:8 !100 A48,0,768 AC0 Q16 v14 [ [ o4c.c.c<b.b.b >c.c.c<b.b.b >c.c.c<b.b.b   /b.b.bb.b.b ]2 >c.c.cc.c.c ]2
+M1:9 !100 A48,0,768 AC0 Q16 v14 [ [ o4a.a.ag.g.g  a.a.ag.g.g   g.g.g/f+.f+.f+  a.a.ag+.g+.g+ ]2  g+.g+.g+ a.a.aa.a.a ]2
+
+// Mel -YM2610B PCM-A
+M3:15 p3 q8 v13 o4 l1 [ @201c&c&c&c /@202c&c&c&c ]2 @203c&c&c&c
+
+// choir -YM2610B PCM-B
+M3:16 [r1]8 q8 p2 v6 l2 [ @211o4b->c @212c@211c @213c/<b /@214>c1 ]2 @215c @213<a1
+
+// Drums -YM2610B PCM-A
+// BD
+M3:10 v15 [crcrcrc16c16r]4  [crcr/crc16c16r]4 rcrc  [crcrcrc16c16r]3 crcr[rc16c16]2  [crcr/crc16c16r]4 cr[c16]4
+
+// SD
+M3:11 [ l8 p3 [rc]7 rc16c16  [rc]6 /r2 ]2  l16 ccrrc32c32ccc
+M3:11 [ l8 p3 [rc]7 rc16c16  [rc]4 / l16 r2ccrrc32c32crr ]2  l8 rcrc l16 r4c8cc
+
+// TOM & Cymbals
+M3:12 p1 l16 v13@21c1 r1 v14@23c1 v13@21c2 v13@17c32c32c@15cc  @13cc@11cc   v14@23c1 r1 v13@21c1 v14@23c1
+M3:13 p2 l16 v10@22c1 r1 v13@24c1 v10@22c2 v13@18c32c32c@16cc(2@14cc@12cc   v13@24c1 r1 v10@22c1 v13@24c1
+
+M3:12 v11@25c1 r1 v13@21c1 v13@17c32c32c@15cc  @13cc@11cc v13@21c2   v14@23c1 r1 v13@21c1 v14@23c2 v13@17c32c32@15c  @13c@11c r4
+M3:13 v13@26c1 r1 v10@22c1 v13@18c32c32c@16cc(2@14cc@12cc v10@22c2   v13@24c1 r1 v10@22c1 v13@24c2 v13@18c32c32@16c(2@14c@12c v15@31c4
+
+// Ride
+M3:14 @32 p2 q8 l8 o5 [v9c/v15c]15 V14c&c4  [v9c/v15c]14 v14c&c2
+M3:14 [v9c/v15c]12 v14c&c1 [v9c/v15c]14 v14c&c2
+
+// Rhythm
+M1:13 [r1]16
+
+// DistGt -OPNA PCM
+M1:16 v6 [ [ !502o5f!501<g ag >c/<b !502>e1 ]2 !502e !501<a1 ]2
+
+// rest
+M2:8 [r1]15 r2.r8
+
+
+// END
